@@ -9,19 +9,12 @@ function convertToUpperCase(text) {
 }
 
 function findMaximum(num1, num2) {
-    if (num1 > num2) {
-        return num2;
-    }
-    else {
-        return num2;
-    }
+    return num1 > num2 ? num1 : num2
 }
 function isPalindrome(word) {
-    let rev = str.split("").reverse().join("");
-    if(rev === str) {
-        return true;
-    }
-    return false;
+    let upper = word.toUpperCase();
+    let rev = upper.split("").reverse().join("");
+    return upper === rev;
 }
 function calculateDiscountedPrice(originalPrice, discountPercentage) {
     let savedAmount = (originalPrice * discountPercentage /100);
